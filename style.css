@@ -1,49 +1,99 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-.container{
-    display: flex;
-    width: 100%;
-    height: 100%;
+.container {
+  display: flex;
+  background-color: rgb(249, 253, 255);
+  width: 100%;
+  height: 100%;
 }
-
-.container .img{
-    background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
-    object-fit: cover;
-    width: 40vw;
-    height: 100vh;
-    background-size: 100% 100%;  
+.logo-img {
+  width: 120px;
+  height: 150px;
 }
-
-.container .sidebar{
-    width: 70vw;
-    height: 95vh;
-    display: grid;
-    align-items: center;
-
+.odin {
+  color: white;
+  font-size: 100px;
+  font-family: "myfont";
 }
-fieldset{
-    border: none;
-
+@font-face {
+  font-family: "myfont";
+  src: url(Norse-Bold.otf);
 }
-
-.form-container{
-    display: grid;
-    grid-template-columns:repeat(2,300px) ;
-    grid-template-rows: repeat();
-    gap: 50px;
-    height: 40vh;
-    justify-content: center;
-    align-content: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  opacity: 0.6;
+  height: 150px;
+  margin-top: 200px;
+}
+.container .img {
+  background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+  object-fit: cover;
+  width: 40vw;
+  height: 100vh;
+  background-size: 100% 100%;
 }
 
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+.container .sidebar {
+  width: 70vw;
+  height: 95vh;
+  display: grid;
+  align-items: center;
+}
+fieldset {
+  border: none;
+  margin-left: 50px;
+}
+
+.form-container {
+  display: grid;
+  background-color: white;
+  grid-template-columns: repeat(2, 300px);
+  height: 25vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: #596d48;
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 50px;
+  border-radius: 5px;
+}
+input:focus {
+  box-shadow: 0px 4px 4px #e5e7eb;
+}
+
+.error {
+  width: 100%;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.9em;
+}
+input:invalid {
+  border-color: #900;
+  background-color: #fdd;
 }
